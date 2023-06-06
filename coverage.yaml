@@ -1,0 +1,29 @@
+# Default coverage params for different architectures
+
+resnet50:
+  build_kwargs:
+    O_star: 5
+    M: 10000
+  step_kwargs:
+    sig_alpha: 1e3
+    method: sigmoid(o*g_kl)
+  test_method: avg
+
+mobilenet:
+  build_kwargs:
+    O_star: 1
+    M: 30000
+  step_kwargs:
+    sig_alpha: 1e3
+    method: sigmoid(o*g_kl)
+  test_method: avg
+
+BiT-S-R101x1:
+  build_kwargs:
+    O_star: 5
+    M: 10000
+  step_kwargs:
+    sig_alpha: 1e3
+    method: sigmoid(o*g_kl)
+  test_method: avg
+

@@ -1,5 +1,9 @@
 # Neuron Activation Coverage: Rethinking Out-of-distribution Detection and Generalization
-This is the official PyTorch implementation of our NAC-UE: https://arxiv.org/abs/2306.02879.
+**[Warning] The method suffers from the overfitting issue. We will re-evaluate our NAC-UE on the OpenOOD v1.5 and update the code and arxiv ASAP.**
+
+[//]: # (This is the official PyTorch implementation of our NAC-UE: https://arxiv.org/abs/2306.02879.)
+
+
 
 ## Usage
 Our dataset and model preparation carefully follows the current OOD state-of-the-art methods, e.g., [MOS](https://arxiv.org/pdf/2105.01879.pdf), [ReAct](https://arxiv.org/abs/2111.12797), [GradNorm](https://arxiv.org/abs/2110.00218), [LINe](https://arxiv.org/abs/2303.13995).
@@ -50,11 +54,13 @@ To reproduce baseline approaches, please run:
 ./scripts/test_baseline.sh resnet50(/mobilenet/BiT-S-R101x1) MSP(/ODIN/Energy/GradNorm) 64
 ```
 
-## OOD Detection Results
+[//]: # (## OOD Detection Results)
 
-NAC-UC achieves a record-breaking performance on the 4 OOD datasets.
+[//]: # ()
+[//]: # (NAC-UC achieves a record-breaking performance on the 4 OOD datasets.)
 
-![results](figs/imagenet_results_table.png)
+[//]: # ()
+[//]: # (![results]&#40;figs/imagenet_results_table.png&#41;)
 
 ## Citation
 

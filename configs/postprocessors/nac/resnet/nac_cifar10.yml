@@ -1,0 +1,50 @@
+postprocessor:
+  name: nac
+  APS_mode: False
+  postprocessor_args:
+    test_method: avg
+    layer_names: [avgpool]
+    valid_num: 1000
+  layer_kwargs:
+    avgpool:
+      O: 50
+      M: 50
+      sig_alpha: 100
+      method: sigmoid(o*g_kl)
+    layer3:
+      O: 100
+      M: 500
+      sig_alpha: 1000
+      method: sigmoid(o*g_kl)
+    layer2:
+      O: 5
+      M: 50
+      sig_alpha: 0.001
+      method: sigmoid(o*g_kl)
+    layer1:
+      O: 100
+      M: 500
+      sig_alpha: 0.001
+      method: sigmoid(o*g_kl)
+  postprocessor_sweep:
+#   # cross
+    avgpool:
+      O: [10, 50] #  [10, 20, 50]
+      M: [50]
+      sig_alpha: [100]
+      method: [sigmoid(o*g_kl)]
+    layer3:
+      O: [100]
+      M: [50, 500]
+      sig_alpha: [1000, 5000]
+      method: [sigmoid(o*g_kl)]
+    layer2:
+      O: [ 5, 10 ]
+      M: [ 50 ]
+      sig_alpha: [0.001]
+      method: [sigmoid(o*g_kl)]
+    layer1:
+      O: [5, 10, 50, 100]
+      M: [50, 500]
+      sig_alpha: [0.001, 0.005]
+      method: [sigmoid(o*g_kl)]

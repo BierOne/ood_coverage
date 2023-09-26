@@ -10,7 +10,7 @@ In this updated version, we re-evaluated NAC-UE on OpenOOD v1.5 without modifyin
 ## Usage
 Our experimental settings carefully align with OpenOOD v1.5. We provide details for utilized benchmarks and models below. For more information, please refer to [https://github.com/Jingkang50/OpenOOD](https://github.com/Jingkang50/OpenOOD).
 
-We provide the required packages in [environment.yml](https://github.com/BierOne/ood_coverage/tree/main/environment.yml), you can simply run the following command to create the environment:
+We provide the required packages in [environment.yml](https://github.com/BierOne/ood_coverage/tree/master/environment.yml), you can simply run the following command to create the environment:
 ```
 conda env create -f environment.yml;
 pip install libmr==0.1.9
@@ -19,7 +19,7 @@ pip install libmr==0.1.9
  
 ### 1. OOD benchmark Preparation
 
-To download all required InD and OOD datasets, you can use the [downloading script](https://github.com/BierOne/ood_coverage/tree/main/scripts/download) provided by OpenOOD. Specifically, please run:
+To download all required InD and OOD datasets, you can use the [downloading script](https://github.com/BierOne/ood_coverage/tree/master/scripts/download) provided by OpenOOD. Specifically, please run:
 ```
 bash scripts/download/download.sh 
 ```
@@ -34,7 +34,7 @@ We employ ResNet-18 pretrained by OpenOOD v1.5. For ResNet-50 and Vit-b-16, we u
 - ImageNet-200 [[Google Drive]](https://drive.google.com/file/d/1ddVmwc8zmzSjdLUO84EuV4Gz1c7vhIAs/view?usp=drive_link): ResNet-18 classifiers trained with cross-entropy loss from 3 training runs.
 - ImageNet-1K [[Google Drive]](https://drive.google.com/file/d/15PdDMNRfnJ7f2oxW6lI-Ge4QJJH3Z0Fy/view?usp=drive_link): ResNet-50 classifiers including 1) the one from torchvision, 2) the ones that are trained by us with specific methods such as MOS, CIDER, and 3) the official checkpoints of data augmentation methods such as AugMix, PixMix.
 
-These checkpoints can be also be downloaded with the [downloading script](https://github.com/BierOne/ood_coverage/tree/main/scripts/download).
+These checkpoints can be also be downloaded with the [downloading script](https://github.com/BierOne/ood_coverage/tree/master/scripts/download).
 
 
 
@@ -47,7 +47,7 @@ bash scripts/split_train.sh 1000
 ```
 
 #### 3.2 Evaluation on CIFAR-10 / CIFAR-100 / ImageNet-1k
-We provide all scripts to reproduce our results in [here](https://github.com/BierOne/ood_coverage/tree/main/scripts/ood/nac).
+We provide all scripts to reproduce our results in [here](https://github.com/BierOne/ood_coverage/tree/master/scripts/ood/nac).
 
 - To reproduce our NAC-UE results on CIFAR-10 & CIFAR-100, please run the following:
     ```

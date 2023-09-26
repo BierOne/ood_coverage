@@ -72,7 +72,7 @@ We provide all scripts to reproduce our results in [here](https://github.com/Bie
 
 Note that _aps_ denotes the automatic paramter search, _cross_ indicates the models are pretrained using cross entropy loss.
 
-Also, if you want to reproduce the baselines results (e.g., ReAct) using this repository, you can run the following command provided by OpenOOD:
+Also, if you want to reproduce the baselines results (e.g., ReAct) using this repository, you can run the following command:
 
 ```
 bash scripts/ood/react/cifar10_test_ood_react.sh;

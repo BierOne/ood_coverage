@@ -1,4 +1,4 @@
-# Neuron Activation Coverage: Rethinking Out-of-distribution Detection and Generalization
+# [ICLR-2024] Neuron Activation Coverage: Rethinking Out-of-distribution Detection and Generalization
 
 [//]: # (**[Warning] The method suffers from the overfitting issue. We will re-evaluate our NAC-UE on the OpenOOD v1.5 and update the code and arxiv ASAP.**)
 

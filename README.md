@@ -123,11 +123,11 @@ NAC-UC achieves SoTA performance on the 3 OOD benchmarks, CIFAR-10, CIFAR100, an
 
 If you find our codebase useful, please cite our paper:
 ```
-@article{liu2023NAC,
-    title={Neuron Activation Coverage: Rethinking Out-of-distribution Detection and Generalization}, 
-    author={Yibing Liu and Chris Xing Tian and Haoliang Li and Lei Ma and Shiqi Wang},
-    journal={arXiv preprint arXiv:2306.02879},
-    year={2023}
+@inproceedings{liu2024neuron,
+ title={Neuron Activation Coverage: Rethinking Out-of-distribution Detection and Generalization},
+ author={Yibing Liu and Chris XING TIAN and Haoliang Li and Lei Ma and Shiqi Wang},
+ booktitle={ICLR},
+ year={2024},
 }
 ```
 

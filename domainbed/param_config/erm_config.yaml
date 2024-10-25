@@ -1,0 +1,26 @@
+# Default update config for ERM
+# Config order: hparams_registry -> config.yaml -> CLI
+ERM_PACS_params:
+  lr: 1e-5
+  resnet_dropout: 0.1
+  weight_decay: 1e-4
+
+ERM_VLCS_params:
+  lr: 1e-5
+  resnet_dropout: 0.1
+  weight_decay: 1e-4
+
+ERM_OfficeHome_params:
+  lr: 1e-5
+  resnet_dropout: 0.5
+  weight_decay: 1e-6
+
+ERM_TerraIncognita_params:
+  lr: 3e-5
+  resnet_dropout: 0.0
+  weight_decay: 1e-4
+
+ERM_DomainNet_params:
+  lr: 3e-5
+  resnet_dropout: 0.5
+  weight_decay: 1e-6

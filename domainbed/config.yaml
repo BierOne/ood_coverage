@@ -1,0 +1,30 @@
+# Default update config
+# Config order: hparams_registry -> config.yaml -> CLI
+swad: False  # True / False
+swad_kwargs:
+  n_converge: 3
+  n_tolerance: 6
+  tolerance_ratio: 0.3
+test_batchsize: 128
+
+# resnet18, resnet50 vit-t16, vit-b16
+model: resnet50
+feat_layers: stem_block
+
+# MIRO params
+ld: 0.1  # lambda
+lr_mult: 10.
+
+# Coverage params
+coverage: True
+coverage_kwargs:
+  report_name: micro_avg
+  build_kwargs:
+    O: 500
+    M: 50
+  step_kwargs:
+    sig_alpha: 1e-1
+    method: sigmoid(o*g_kl[f])
+    save_state: False
+  update_kwargs:
+    method: avg

@@ -5,6 +5,7 @@
 This is the official PyTorch implementation of our NAC-UE: https://arxiv.org/abs/2306.02879. 
 In this updated version, we re-evaluated NAC-UE on OpenOOD v1.5 without modifying the core method. It still outperforms 21 SoTA OOD detection methods across three benchmarks!
 
+> Please see the source code for NAC-ME in the folder [domainbed](https://github.com/BierOne/ood_coverage/tree/master/domainbed), which is tailored for generalization tasks. 
 
 
 ## Usage
